@@ -1,5 +1,5 @@
 {
-  "name": "xyz",
+  "name": "xyz-language",
   "version": "1.0.0",
   "description": "XYZ is a novel web language aimed at simplifying the creation of web components by merging layout, style, and data fetching into a single, intuitive syntax.",
   "main": "src/build.js",
