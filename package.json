@@ -1,6 +1,6 @@
 {
   "name": "xyz-language",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "XYZ is a novel web language aimed at simplifying the creation of web components by merging layout, style, and data fetching into a single, intuitive syntax.",
   "main": "src/index.js",
   "scripts": {
