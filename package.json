@@ -1,0 +1,26 @@
+{
+  "name": "xyz",
+  "version": "1.0.0",
+  "description": "XYZ is a novel web language aimed at simplifying the creation of web components by merging layout, style, and data fetching into a single, intuitive syntax.",
+  "main": "src/build.js",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": ["web", "components", "language", "web design", "data fetching", "templating", "xyz"],
+  "author": "Ricky Eckhardt <ricky.eckhardt@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickyeckhardt/xyz"
+  },
+  "bugs": {
+    "url": "https://github.com/rickyeckhardt/xyz/issues"
+  },
+  "homepage": "https://github.com/rickyeckhardt/xyz#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "pegjs": "^0.10.0"
+  }
+}
