@@ -1,11 +1,13 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const parser = require('./parser/xyz');
 const { generateHTML, wrapWithHTMLPage } = require('./generator/htmlGenerator');
 
-const inputPath = path.join(__dirname, '..', 'test', 'test.xyz');
-const outputPath = path.join(__dirname, '..', 'build', 'index.html');
+const inputPath = process.argv[2] || path.join(__dirname, '..', 'test', 'test.xyz');
+const outputPath = process.argv[3] || path.join(__dirname, '..', 'build', 'index.html');
 
 async function fetchData(url, take) {
   const response = await axios.get(url);
@@ -39,6 +41,12 @@ async function processData(component) {
 }
 
 async function build() {
+  // Check if the input and output paths have been provided
+  if (!process.argv[2] || !process.argv[3]) {
+    console.error('Please provide the input and output paths.');
+    return;
+  }
+
   // Read the XYZ content
   const content = fs.readFileSync(inputPath, 'utf-8');
 
