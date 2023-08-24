@@ -1,13 +1,21 @@
 {
   "name": "xyz-language",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "XYZ is a novel web language aimed at simplifying the creation of web components by merging layout, style, and data fetching into a single, intuitive syntax.",
   "main": "src/build.js",
   "scripts": {
     "build": "node src/build.js",
     "dev": "node src/server.js"
   },
-  "keywords": ["web", "components", "language", "web design", "data fetching", "templating", "xyz"],
+  "keywords": [
+    "web",
+    "components",
+    "language",
+    "web design",
+    "data fetching",
+    "templating",
+    "xyz"
+  ],
   "author": "Ricky Eckhardt <ricky.eckhardt@gmail.com>",
   "license": "MIT",
   "repository": {
